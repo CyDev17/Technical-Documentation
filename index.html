@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intro to Web Development</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <main id="main-doc">
-        <section class="main-section">
-            <header></header>
-        </section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-    </main>
+<body> 
+  <nav id="navbar">
+    <header>Web Dev Docs</header>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Styling">CSS Styling</a>
+    <a class="nav-link" href="#JavaScript_Syntax">JavaScript Syntax</a>
+    <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML stands for HyperText Markup Language.</p>
+      <p>It is used to structure content on the web.</p>
+      <code>&lt;h1&gt;Hello&lt;/h1&gt;</code>
+      <p>Basic tags include headings, paragraphs, links, etc.</p>
+      <ul>
+        <li>Heading Tags</li>
+        <li>Paragraph Tags</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="CSS_Styling">
+      <header>CSS Styling</header>
+      <p>CSS stands for Cascading Style Sheets.</p>
+      <p>It is used to control the layout and appearance.</p>
+      <code>body { background-color: #fff; }</code>
+      <p>You can apply styles via inline, internal, or external CSS.</p>
+      <ul>
+        <li>Selectors</li>
+        <li>Properties</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_Syntax">
+      <header>JavaScript Syntax</header>
+      <p>JavaScript adds interactivity to web pages.</p>
+      <p>It is a scripting language that runs in the browser.</p>
+      <code>console.log("Hello World");</code>
+      <p>Variables can be declared using var, let, or const.</p>
+      <ul>
+        <li>Functions</li>
+        <li>Events</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="DOM_Manipulation">
+      <header>DOM Manipulation</header>
+      <p>DOM stands for Document Object Model.</p>
+      <p>It represents the structure of an HTML document.</p>
+      <code>document.getElementById("demo").innerHTML = "Hi!";</code>
+      <p>You can add, delete, or change HTML elements using JS.</p>
+      <ul>
+        <li>Selectors</li>
+        <li>Events</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+      <p>Responsive design ensures your site looks good on all devices.</p>
+      <p>Media queries allow for conditional styling.</p>
+      <code>@media (max-width: 600px) { body { font-size: 14px; } }</code>
+      <p>Use relative units like %, em, and rem for better scaling.</p>
+      <ul>
+        <li>Media Queries</li>
+        <li>Flexbox/Grid</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
